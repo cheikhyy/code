@@ -1,0 +1,132 @@
+body{
+    /* background: #111; */
+     padding: 125px 14px 0; 
+}
+
+
+/* span {
+    width: 150px;
+    height: 9999px;
+} */
+
+.flex-container {
+    /* max-width: 350px;
+    min-width: 350px; */
+    /* margin: 0 auto; */
+    border-radius: 5px;
+    padding: 12px; 
+    background: blue;
+     display: flex; 
+      gap: 10px; 
+      align-items: center;
+    
+
+   
+
+    flex-wrap: wrap;  
+    justify-content: center;
+    
+
+}
+
+
+.flex-items {
+    background: crimson;
+    border:  2px solid #111;
+    padding: 20px;
+    border-radius: 5px;
+    color: #f1f1f1;
+    
+
+} 
+
+/* .container{
+    max-width: 700px;
+    min-width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 12px;
+    background: beige;
+
+    display: flex; 
+    gap: 10px;
+    align-items: center;
+    align-content: flex-end;
+
+    flex-wrap: wrap;
+    
+    
+}
+
+/* .flexy{
+    background: crimson;
+    border:  2px solid #111;
+    padding: 25px;
+    border-radius: 5px;
+    color: #f1f1f1;
+
+} */
+
+
+/* Align  item */
+.container {
+    display: flex;
+    height: 200px; /* hauteur pour illustrer l'alignement */
+    border: 1px solid black;
+  }
+  .item {
+    width: 50px;
+    height: 50px;
+    background-color: lightcoral;
+    margin: 5px;
+  }
+  .center-items {
+    align-items: center ;
+  }
+  .flex-start-items {
+    align-items: flex-start;
+  }
+  .flex-end-items {
+    align-items: flex-end;
+  }
+  .baseline-items {
+    align-items: baseline;
+  }
+  .stretch-items {
+    align-items: stretch;
+  }
+
+   /* align items */
+  .container {
+    display: flex;
+    height: 200px; /* hauteur du conteneur */
+    border: 2px solid #000;
+    background-color: lightgray;
+    align-items: flex-end; /* Aligne les éléments au centre de l'axe transversal */
+}
+
+.item {
+    width: 50px;
+    height: 50px;
+    background-color: coral;
+    margin: 5px;
+}
+
+
+ /* align content */
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  height: 300px; /* Hauteur du conteneur */
+  border: 2px solid #000;
+  background-color: lightgray;
+  align-content: space-between; /* Espacement égal entre les lignes */
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 5px;
+}

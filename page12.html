@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Simple</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px;
+            gap: 10px; /* Espacement entre les cellules */
+        }
+        .item1 {
+            grid-column-start: 1; /* Commence à la colonne 1 */
+            grid-column-end: 3; /* Se termine à la colonne 3 */
+            grid-row-start: 1; /* Commence à la ligne 1 */
+            grid-row-end: 2; /* Se termine à la ligne 2 */
+            background-color: coral;
+        }
+        .item2 {
+            grid-column-start: 2; /* Commence à la colonne 2 */
+            grid-column-end: 4; /* Se termine à la colonne 4 */
+            grid-row-start: 2; /* Commence à la ligne 2 */
+            grid-row-end: 4; /* Se termine à la ligne 4 */
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+    </div>
+</body>
+</html>

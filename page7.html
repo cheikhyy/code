@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positionnement Absolu</title>
+    <style>
+        .container {
+            height: 200px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        .item {
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Absolu</div>
+    </div>
+</body>
+</html>
+
+<!-- Positionnement Absolu (Absolute)
+Définition : Un élément positionné absolument est retiré du flux normal du document et est positionné par rapport à son ancêtre le plus proche ayant une position différente de static (généralement relative, absolute, ou fixed).
+Effet : L'élément ne prend pas d'espace dans le flux du document et se positionne en fonction des propriétés top, right, bottom, et left. -->

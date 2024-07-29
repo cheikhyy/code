@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positionnement Collant</title>
+    <style>
+        .container {
+            height: 2000px; /* Hauteur pour permettre le défilement */
+            border: 1px solid #000;
+        }
+        .item {
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+            position: -webkit-sticky; /* Pour les navigateurs WebKit comme Safari */
+            position: sticky;
+            top: 20px; /* Collant à 20px du haut */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Collant</div>
+    </div>
+</body>
+</html>
+
+<!-- . Positionnement Collant (Sticky)
+Définition : Un élément positionné de manière collante est en partie fixé dans le flux du document et en partie positionné de façon absolue. Il se comporte comme relative jusqu'à ce qu'il atteigne une position définie par top, right, bottom, ou left, puis il se fixe à cet endroit lorsqu'il est atteint lors du défilement.
+Effet : L'élément est collant à son conteneur lorsqu'il est défilé jusqu'à la position définie. -->
+
+
+<!-- Résumé des Propriétés
+top, right, bottom, left : Ces propriétés déterminent la position d'un élément positionné (absolument, relativement, ou fixement) par rapport à son conteneur ou à la fenêtre de visualisation.
+z-index : Définit l'ordre d'empilement des éléments positionnés. Plus la valeur est élevée, plus l'élément sera au-dessus des autres.
+Ces méthodes de positionnement offrent une grande flexibilité pour organiser et manipuler les éléments dans une page web, chacune ayant ses propres cas d'utilisation selon les besoins de mise en page. -->
+
+
+
+

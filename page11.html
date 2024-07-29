@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <title>Mise en Page avec Zones de Grille</title>                          
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 200px 1fr; /* Barre latérale + Contenu principal */
+            grid-template-rows: auto 1fr auto; /* En-tête, Contenu principal, Pied de page */
+            grid-template-areas: 
+                "header header"
+                "sidebar content"
+                "footer footer";
+            height: 100vh; /* Hauteur de la fenêtre de visualisation */
+        }
+        .header {
+            grid-area: header;
+            background-color: coral;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightblue;
+        }
+        .content {
+            grid-area: content;
+            background-color: lightgreen;
+        }
+        .footer {
+            grid-area: footer;
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="content">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
+
+<!-- Créer une mise en page avec des zones nommées pour un en-tête, une barre latérale, du contenu principal et un pied de page.
+ Explication :
+
+Grille : Définie avec des zones nommées.
+Colonnes : Une colonne de 200px pour la barre latérale et une colonne flexible pour le contenu principal.
+Lignes : Une ligne pour l’en-tête, une pour le contenu principal, et une pour le pied de page.
+Zones de Grille : grid-template-areas définit des zones nommées, permettant de placer les éléments facilement. 
+
+Ces exemples montrent comment utiliser CSS Grid pour créer des mises en page flexibles et structurées en définissant des colonnes, des lignes, et en plaçant les éléments dans une grille. Le système de grille CSS offre une grande souplesse pour concevoir des interfaces modernes et réactives.

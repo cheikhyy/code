@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positionnement Relatif</title>
+    <style>
+        .container {
+            height: 200px;
+            border: 1px solid #000;
+            position: relative;
+        }
+        .item {
+            background-color: coral;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 20px;
+            left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Relatif</div>
+    </div>
+</body>
+</html>
+
+
+<!-- Définition : Un élément positionné relativement est placé selon le flux normal du document, puis décalé par rapport à sa position d'origine avec les propriétés top, right, bottom, et left.
+Effet : L'élément conserve son espace dans le flux du document. -->
